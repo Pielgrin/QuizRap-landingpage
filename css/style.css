@@ -215,6 +215,10 @@ footer a {
     font-size:18px;
   }
 
+  .title2 {
+    float: center;
+  }
+
   .apps ul > li{
     margin:20px 0 0 0;
     display: block;
