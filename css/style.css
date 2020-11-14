@@ -205,10 +205,14 @@ footer a {
 |*    Responsive
 \*---------------------------------------------*/
 
-@media (max-width: 550px) {
+@media (max-width: 780px) {
 
   .title{
     padding-top:40px;
+  }
+
+  .title2 {
+    float: none;
   }
 
   .title h2 {
@@ -217,6 +221,22 @@ footer a {
 
   .title2 {
     float: center;
+  }
+
+  .title3 h1 {
+    text-align: center;
+  }
+
+  .title3 h2 {
+    text-align: center;
+  }
+
+  .title3 h4 {
+    text-align: center;
+  }
+
+  .title3 {
+    float: none;
   }
 
   .apps ul > li{
