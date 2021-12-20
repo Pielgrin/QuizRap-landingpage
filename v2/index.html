@@ -206,9 +206,11 @@
                             </li>
                         </ul>
                         
+                        <iframe class="vid" id="yt" src="https://www.youtube.com/embed/qObSFfdfe7I" frameborder="0" allowfullscreen></iframe>
+
                         <div class="btn-group">
                             <a href="#" class="btn">Nous contacter</a>
-                            <a href="#" class="btn"><i class="far fa-play-circle"></i> Comment ça marche</a>
+                            <a class="btn" id="content"><i class="far fa-play-circle"></i> Comment ça marche</a>
                         </div>
                     </div><!--/.feature-inside-->
                 </div>
@@ -871,6 +873,12 @@
     async defer></script>
     <!--main script-->
     <script src="js/main.js"></script>
+
+    <script>$("button").click(function () {
+        $("#content").hide();
+        $("#yt")[0].src += "?autoplay=1";
+        $("#yt").show();
+        });</script>
 
 </body>
 </html>

@@ -2599,3 +2599,16 @@ Start Blog Details light page style
 Close Blog Details light page style
 
 -------------------------------- */
+
+
+.vid {
+  width: 100vw;
+  height: 400px;
+  object-fit: cover;
+  z-index: -1;
+  position: absolute;
+  background-color: black;
+}
+#yt {
+  display: none;
+}
