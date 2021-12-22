@@ -108,7 +108,7 @@ $(function($) {
  var owls = $("#team-slider");
     owls.owlCarousel({
 
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout:6000,
         autoplayHoverPause:true,
         items: 3,
