@@ -36,18 +36,20 @@
   <meta name="author" content="Quiz Rap">
   <meta name="apple-itunes-app" content="app-id=1514110754">
   <meta name="google-play-app" content="app-id=com.pierrepellegrin.RapCulture">
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <!-- Standard Favicon -->
+    <link rel="icon" href="img/fav/favicon-96x96.png">
+
+    <!-- Touch Icons - iOS and Android 2.1+ -->
+    <link rel="apple-touch-icon" href="img/fav/android-icon-48x48.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/fav/android-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/fav/apple-icon-114x114.png" />
 
   <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
   <link rel="stylesheet" href="css/jquery.smartbanner.css" type="text/css" media="screen">
 
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/policy-style.css">
 
 
 </head>
@@ -62,23 +64,25 @@
       </div>
       <h1>MENTIONS LEGALES</h1>
 
-      <br/>
-      <br/>
-      <p>Dernière mise à jour le 24 mai 2020</p>
-      <br/>
-      <br/>
+      <br />
+      <br />
+      <p>Dernière mise à jour le 04 janvier 2022</p>
+      <br />
+      <br />
       <div style="text-align: justify;">
-        <p><a href="https://pierrepellegrin.com" style="color: inherit;">Pierre Pellegrin</a> est une personne physique domiciliée au 46 rue Léon Frot, 75011 Paris et
+        <p><a href="https://pierrepellegrin.com" style="color: inherit;">Pierre Pellegrin</a> est une personne physique
+          domiciliée au 9 rue Fabre d'Eglantine, 75012 Paris et
           opère l’application Quiz Rap.
-          Vous pouvez me contacter à l’adresse : <a href="mailto:contact@quizrap.fr" style="color: inherit;">contact@quizrap.fr</a></p>
-          <br/>
-        <p><a style="text-decoration: underline;">OVH (Hébergeur)</a><br/>
-          SAS au capital de 10 059 500 € <br/>
-          RCS Lille Métropole 424 761 419 00045 <br/>
-          Code APE 6202A <br/>
-          N° TVA : FR 22 424 761 419 <br/>
+          Vous pouvez me contacter à l’adresse : <a href="mailto:contact@quizrap.fr"
+            style="color: inherit;">contact@quizrap.fr</a></p>
+        <br />
+        <p><a style="text-decoration: underline;">OVH (Hébergeur)</a><br />
+          SAS au capital de 10 059 500 € <br />
+          RCS Lille Métropole 424 761 419 00045 <br />
+          Code APE 6202A <br />
+          N° TVA : FR 22 424 761 419 <br />
           Siège social : 2 rue Kellermann - 59100 Roubaix - France.</p>
-        
+
       </div>
 
     </div>
@@ -111,7 +115,7 @@
   </div>
 
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="jquery.smartbanner.js"></script>
+  <script src="js/jquery.smartbanner.js"></script>
   <script type="text/javascript">
     $(function () {
       $.smartbanner({
@@ -124,9 +128,23 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
 
+    // Default ad_storage to 'denied'.
+    gtag('consent', 'default', {
+      'ad_storage': 'denied'
+    });
+
+    gtag('js', new Date());
     gtag('config', 'G-Z9Z1PJ6WP8');
+  </script>
+
+  <!-- Update this section based on your business requirements. -->
+  <script>
+    function consentGranted() {
+      gtag('consent', 'update', {
+        'ad_storage': 'granted'
+      });
+    }
   </script>
 
 </body>

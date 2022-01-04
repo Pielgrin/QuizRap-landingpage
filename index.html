@@ -1,142 +1,955 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="fr" class="no-js">
+<!--<![endif]-->
 
 <head>
+    <meta charset="utf-8">
 
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Quiz Rap ! Es-tu vraiment un expert du rap ?</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Es-tu vraiment un expert du Rap FR ? Quiz Rap, le meilleur quiz pour tester tes connaissances sur le rap français !">
+    <meta name="author" content="Quiz Rap">
 
-  <link rel="icon" type="image/png" href="">
-  <link rel="canonical" href="https://quizrap.fr"/>
+    <title>Quiz Rap ! L'application pour devenir le boss du Rap Français</title>
+    <!-- Standard Favicon -->
+    <link rel="icon" href="img/fav/favicon-96x96.png">
 
-  <meta name="Description" content="Quiz Rap ! Teste ta culture rap avec Quiz Rap, le meilleur jeu de quizz à télécharger sur le rap ! Défie tes potes sur des questions de rap français !">
-  <meta name="Identifier-Url" content="https://quizrap.fr">
-  <meta name="Keywords"
-    content="quiz, rap, musique, music, quizz, hip-hop, culture, test, connaissances, fun, game, jeu, booba, pnl, ios, expert, devinette, quizrap, quiz rap, quizz rap, rapquiz, rap quiz, rap quizz, multijoueur, trivia, quizrap, quizrap_, quiz-rap">
-  <meta name="Revisit-After" content="1 day">
-  <meta name="Robots" content="index">
-  <meta name="Rating" content="general">
-  <meta name="Distribution" content="global">
+    <!-- Touch Icons - iOS and Android 2.1+ -->
+    <link rel="apple-touch-icon" href="img/fav/android-icon-48x48.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/fav/android-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/fav/apple-icon-114x114.png" />
 
-  <meta name="instagram:card" content="summary_large_image">
-  <meta name="instagram:site" content="@quizrap_">
-  <meta name="instagram:title" content="Télécharge Quiz Rap">
-  <meta name="instagram:description" content="Le meilleur quiz pour tester ta culture sur le rap francophone">
-  <meta name="instagram:creator" content="@quizrap_">
-  <meta name="instagram:image:src" content="https://quizrap.fr/img/logo.png">
+    <meta name="apple-itunes-app" content="app-id=1514110754">
+    <meta name="google-play-app" content="app-id=com.pierrepellegrin.RapCulture">
+    <link rel="stylesheet" href="css/jquery.smartbanner.css" type="text/css" media="screen">
 
-  <meta property="og:title" content="Le meilleur quiz pour tester ta culture sur le rap francophone" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://quizrap.fr" />
-  <meta property="og:image" content="https://quizrap.fr/img/logo.png" />
-  <meta property="og:description" content="Quiz Rap ! Es-tu vraiment un expert du rap ?" />
+    <!--bootstrap v4.0.0-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!--animate-->
+    <link rel="stylesheet" type="text/css" href="css/aos.css">
+    <!--reset css-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!--main style-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--owl-carousel-->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+    <!--fontawesome cdn-->
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
 
-  <meta name="author" content="Quiz Rap">
-  <meta name="apple-itunes-app" content="app-id=1514110754">
-  <meta name="google-play-app" content="app-id=com.pierrepellegrin.RapCulture">
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <!--modernizr-->
+    <script src="js/vendor/modernizr.js"></script>
 
-  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-  <link rel="stylesheet" href="css/jquery.smartbanner.css" type="text/css" media="screen">
-
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="css/style.css">
-
-
+    <!--[if lt IE 9]>
+    <script src="js/html5/respond.min.js"></script>
+    <![endif]-->
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="60">
+    <div class="se-pre-con"></div>
 
-  <div class=home>
-    <div class=title>
+    <!-- main nav start -->
 
-      <div class=title1>
-        <h1><img alt="Télécharge Quiz Rap ! Le meilleur jeu de quizz de rap sur l'App Store et le Google Play Store" src="img/logo.png" style="max-width: 50%;"></h1>
-      </div>
+    <nav class="navbar navbar-expand-lg fixed-top center-brand static-nav">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="logo" class="logo-default">
+            </a>
+            <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
+                data-target="#xenav">
+                <i class="fas fa-bars fa-2x"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="xenav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#feature">à propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#screenshot">screenshots</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">équipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">avis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">faq </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">blog </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">contact </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--/.CONTAINER-->
 
-      <div class=title2>
-        <h1><img alt="Capture d'écran jeu de rap quiz : Quiz Rap" src="img/screenshots/screenshot1.png"></h1>
+    </nav>
+    <!-- /.navbar -->
 
-      </div>
+    <!--hero section-->
+    <header class="hero-section" id="home">
 
-      <div class=title3>
-        <h1>Es-tu vraiment un expert du rap français ?</h1>
-        <h2>Quiz Rap ! Le meilleur quiz pour tester ta culture sur le rap français !</h2>
+        <!--line shape background animation-->
+        <div class="container-line">
+            <div class="container-line-center">
+                <div class="line-item one"></div>
+                <div class="line-item two"></div>
+                <div class="line-item three"></div>
+                <div class="line-item four"></div>
+            </div>
+        </div>
+        <!--line shape background animation-->
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="row h-100">
+                        <div class="col-md-12 align-self-center">
+                            <div class="hero-content">
+                                <h1><b>L'application</b> pour devenir le boss du <b>Rap Français</b></h1>
+                                <p>Teste ta culture Rap en défiant tes potes et devient le meilleur de la communauté !
+                                </p>
+                                <div class="btn-group">
+                                    <a href="https://apps.apple.com/fr/app/quiz-rap/id1514110754" class="btn"
+                                        target="_blank"><i class="fab fa-apple fa-2x"></i> Disponible sur <br>Apple</a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.pierrepellegrin.RapCulture"
+                                        class="btn" target="_blank"><i class="fab fa-google-play fa-2x"></i> Disponible
+                                        sur <br>Android</a>
+                                </div>
+                            </div>
+                            <!--/.hero-content-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 pos-r">
+                    <div class="row justify-content-md-center justify-content-sm-center">
+                        <div class="col-md-auto col-sm-auto">
+                            <div class="banner-app-mock">
+                                <!--mobile inside image-->
+                                <img src="img/screenshot_question.png" class="main-img" alt="" />
+                                <!--mobile mockup-->
+                                <img src="img/mobile-mock.png" class="mockup" alt="" />
+
+                            </div>
+                            <!--/.banner-app-mock-->
+                        </div>
+                    </div>
+                    <div class="mobile-graphic">
+                        <!--mobile graphic-->
+                        <img src="img/mobile-graphic.png" alt="" class="moc-grp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/.container-->
+    </header>
+    <!--/.hero section-->
+
+    <!--app feature-->
+    <section class="app-feature-sec" id="feature">
+        <!--line shape background animation-->
+        <div class="container-line">
+            <div class="container-line-center">
+                <div class="line-item one"></div>
+                <div class="line-item two"></div>
+                <div class="line-item three"></div>
+                <div class="line-item four"></div>
+            </div>
+        </div>
+        <!--line shape background animation-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="title">
+                        <h3>Es-tu un expert du rap français ?</h3>
+                        <p>Quiz Rap, le meilleur quiz pour tester tes connaissances sur le rap français !</p>
+                    </div>
+                    <!--/.title-->
+                </div>
+                <div class="w-100"></div>
+                <div class="col-md-6">
+                    <div class="app-mock-up-img">
+                        <div class="row justify-content-md-center justify-content-sm-center">
+                            <div class="col-md-auto col-sm-auto">
+                                <div class="banner-app-mock">
+                                    <!--mobile inside image-->
+                                    <img src="img/screenshot_home.png" class="main-img" alt="" />
+                                    <!--mobile mockup-->
+                                    <img src="img/mobile-mock.png" class="mockup" alt="" />
+
+                                </div>
+                                <!--/.banner-app-mock-->
+                            </div>
+                        </div>
+                        <div class="mobile-graphic">
+                            <!--mobile graphic-->
+                            <img src="img/mobile-graphic.png" alt="" class="moc-grp">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 offset-md-1">
+                    <div class="feature-inside">
+                        <ul>
+                            <li>
+                                <img src="img/icon/symbole-flash.png" alt="" />
+                                <h4>Défie tes potes</h4>
+                                <p>Joue en duel contre tes potes ou un joueur aléatoire pour savoir qui sera le meilleur
+                                    !</p>
+                            </li>
+                            <li>
+                                <img src="img/icon/question.png" alt="" />
+                                <h4>Plus de 1000 questions</h4>
+                                <p>Découvre nos questions sur la culture du rap réparties en 12 thèmes différents. Il y
+                                    en a pour tous les goûts !</p>
+                            </li>
+                            <li>
+                                <img src="img/icon/avatar.png" alt="" />
+                                <h4>Des avatars à collectionner</h4>
+                                <p>15 avatars exclusifs à collectionner à l'effigie de tes rappeurs préférés !</p>
+                            </li>
+                        </ul>
+
+                        <div class="btn-group">
+                            <a href="mailto:contact@quizrap.fr" class="btn">Nous contacter</a>
+                            <a class="btn" id="content" href="https://youtu.be/A18SQFlTWm8" target="_blank"><i
+                                    class="far fa-play-circle"></i> Comment ça marche</a>
+                        </div>
+                    </div>
+                    <!--/.feature-inside-->
+                </div>
+            </div>
+        </div>
+        <!--/.container-->
+    </section>
+    <!--/.app feature-->
+
+    <!--about app-->
+    <section class="about-app-sec" id="services">
+        <!--line shape background animation-->
+        <div class="container-line">
+            <div class="container-line-center">
+                <div class="line-item one"></div>
+                <div class="line-item two"></div>
+                <div class="line-item three"></div>
+                <div class="line-item four"></div>
+            </div>
+        </div>
+        <!--line shape background animation-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="title">
+                        <h3>Un quizz pour tout savoir sur le rap français</h3>
+                        <p>"Quiz Rap c'est l'histoire de deux potes passionnés de rap. Ne trouvant pas d'application à
+                            la hauteur pour tester leurs connaissances, ils l'ont créée."</p>
+                        <p>L'application te permet de défier tes potes en duel ! L'occasion de voir qui s'y connaît le
+                            mieux en rap !</p>
+                        <p>Il y a également un classement général des joueurs pour voir qui est le meilleur !</p>
+                        <div class="hero-content">
+                            <div class="btn-group">
+                                <a href="https://apps.apple.com/fr/app/quiz-rap/id1514110754" class="btn"
+                                    target="_blank"><i class="fab fa-apple fa-2x"></i> Disponible sur <br>Apple</a>
+                                <a href="https://play.google.com/store/apps/details?id=com.pierrepellegrin.RapCulture"
+                                    class="btn" target="_blank"><i class="fab fa-google-play fa-2x"></i> Disponible sur
+                                    <br>Android</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="special-graphic">
+                        <img src="img/screenshot_game_menu.png" data-aos="fade-up" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/.container-->
+    </section>
+    <!--/.about app-->
+
+    <!--screenshot-->
+    <section class="app-screenshot-sec" id="screenshot">
+        <!--line shape background animation-->
+        <div class="container-line">
+            <div class="container-line-center">
+                <div class="line-item one"></div>
+                <div class="line-item two"></div>
+                <div class="line-item three"></div>
+                <div class="line-item four"></div>
+            </div>
+        </div>
+        <!--line shape background animation-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 text-center offset-md-2">
+                    <div class="title">
+                        <h3>RENTRE DANS LE GAME</h3>
+                        <p>Quiz Rap est une application pour developer et tester sa culture rap, crée par des
+                            passionnés, pour des passionnés.</p>
+                    </div>
+                    <!--/.title-->
+                </div>
+                <div class="w-100"></div>
+                <div class="col-md-12">
+                    <div class="owl-carousel" id="screenshot-owl">
+                        <div>
+                            <div class="single-shot">
+                                <iframe width="270" height="584" src="https://www.youtube.com/embed/A18SQFlTWm8"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="single-shot">
+                                <img src="img/iPhone Xs Max, Xr.jpg" alt="" />
+                            </div>
+                        </div>
+                        <div>
+                            <div class="single-shot">
+                                <img src="img/iPhone Xs Max, Xr 2.jpg" alt="" />
+                            </div>
+                        </div>
+                        <div>
+                            <div class="single-shot">
+                                <img src="img/iPhone Xs Max, Xr 3.jpg" alt="" />
+                            </div>
+                        </div>
+                        <div>
+                            <div class="single-shot">
+                                <img src="img/iPhone Xs Max, Xr 4.jpg" alt="" />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/.container-->
+    </section>
+    <!--/.screenshot-->
+
+    <!--fun fact-->
+    <section class="fun-fact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="single-fact">
+                        <h2><span class="counter">20</span>k</h2>
+                        <h5>Téléchargements</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-fact">
+                        <h2><span class="counter">4.7</span>/5</h2>
+                        <h5>Note moyenne</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-fact">
+                        <h2>+<span class="counter">1000</span></h2>
+                        <h5>Questions</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/.container-->
+    </section>
+    <!--/.fun fact-->
+
+    <!--our-team-->
+    <section class="our-team-sec" id="team">
+        <!--line shape background animation-->
+        <div class="container-line">
+            <div class="container-line-center">
+                <div class="line-item one"></div>
+                <div class="line-item two"></div>
+                <div class="line-item three"></div>
+                <div class="line-item four"></div>
+            </div>
+        </div>
+        <!--line shape background animation-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="title text-center">
+                        <h3>Quiz Rap Ekip</h3>
+                        <p>Touche un membre de ma clique, tu verras qu'on n'est pas tout seul</p>
+                    </div>
+                    <!--/.title-->
+                </div>
+                <div class="w-100"></div>
+                <div class="col-md-12">
+                    <div class="owl-carousel" id="team-slider">
+                        <div>
+                            <div class="single-team">
+                                <img src="img/pierre.jpeg" alt="" />
+                                <h4>Pierre Pellegrin</h4>
+                                <p>Co-Fondateur</p>
+                                <ul>
+                                    <li><a href="https://pierrepellegrin.com"><i class="fa fa-globe"></i></a></li>
+                                    <li><a href="https://twitter.com/PellegrinPierre"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li><a href="https://www.linkedin.com/in/pierre-pellegrin/"><i
+                                                class="fab fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                            <!--/.single-team-->
+                        </div>
+                        <div>
+                            <div class="single-team">
+                                <img src="img/victor.jpeg" alt="" />
+                                <h4>Victor Pelletier</h4>
+                                <p>Co-Fondateur</p>
+                                <ul>
+                                    <li><a href="https://victorpelletier.fr"><i class="fa fa-globe"></i></a></li>
+                                    <li><a href="https://twitter.com/Vico3010"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/victor-pelletier/"><i
+                                                class="fab fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                            <!--/.single-team-->
+                        </div>
+                        <div>
+                            <div class="single-team">
+                                <img src="img/carla.jpeg" alt="" />
+                                <h4>Carla Raud</h4>
+                                <p>Cheffe de projet</p>
+                                <ul>
+                                    <li><a href="https://www.linkedin.com/in/carla-raud-9146a8156/"><i
+                                                class="fab fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                            <!--/.single-team-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/.container-->
+    </section>
+    <!--/.our-team-->
+
+    <!--testimonials-->
+    <section class="testimonials-sec" id="testimonials">
+        <!--line shape background animation-->
+        <div class="container-line">
+            <div class="container-line-center">
+                <div class="line-item one"></div>
+                <div class="line-item two"></div>
+                <div class="line-item three"></div>
+                <div class="line-item four"></div>
+            </div>
+        </div>
+        <!--line shape background animation-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="title">
+                        <h3>Avis</h3>
+                        <p>Parce qu'on est très fier des retours que l'on reçoit au quotidien alors en voici un
+                            échantillon.</p>
+                    </div>
+                    <!--title-->
+                </div>
+
+                <div class="col-md-8">
+                    <div class="owl-carousel" id="testimonial-owl">
+                        <div>
+                            <div class="single-testi">
+                                <p>Mon appli du moment ! très bonne appli, j'adore le rap et je suis choqué des
+                                    références qu'il y a dedans. Les questions sont diversifiées, ce ne sont jamais les
+                                    mêmes. Le fait de pouvoir partager la question avec des amis c'est vraiment cool
+                                    aussi, j'ai engrainé un groupe de pote sur messenger et ils ont téléchargé l'app on
+                                    s'envoie tous des questions quand on bloque ! Assistance très réactive</p>
+                                <div class="media">
+                                    <img src="img/client1.png" alt="" />
+                                    <div class="media-body">
+                                        <h4>Timothé</h4>
+                                        <h5><a
+                                                href="https://play.google.com/store/apps/details?id=com.pierrepellegrin.RapCulture&reviewId=gp%3AAOqpTOG8LePSV_jepxUs-hY5nZJ9mfCvMnJD7jgFKjUeXh00W6K2Eo9ffyLadiuZNZX2EU0Ix6-8t1RZm_2LUeU">Google
+                                                Play Store</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/.single-testi-->
+                        </div>
+                        <div>
+                            <div class="single-testi">
+                                <p>Super application je recommande !<br />Il y a des questions pour tout les sujets et
+                                    elles sont bien réparties ce qui permet d’apprendre tout en profitant du jeu. Les
+                                    séries de victoires nous poussent à nous concentrer sur nos 5 vies horaires. Pour
+                                    finir les badges nous donne une idée de notre savoir sur les sujets des différentes
+                                    questions.<br />En gros c'est top</p>
+                                <div class="media">
+                                    <img src="img/client2.png" alt="" />
+                                    <div class="media-body">
+                                        <h4>Le bg du coin</h4>
+                                        <h5><a
+                                                href="https://apps.apple.com/fr/app/quiz-rap/id1514110754#see-all/reviews">App
+                                                Store</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/.single-testi-->
+                        </div>
+                        <div>
+                            <div class="single-testi">
+                                <p>Super appli !<br /><br />J'adore les quiz, j'adore le rap donc j'adore quiz
+                                    rap.<br /><br />De plus même si tu te trompes tu peux en apprendre chaque jour plus
+                                    sur le rap.<br /><br /><br /><br /></p>
+                                <div class="media">
+                                    <img src="img/client3.png" alt="" />
+                                    <div class="media-body">
+                                        <h4>Erwann</h4>
+                                        <h5><a
+                                                href="https://play.google.com/store/apps/details?id=com.pierrepellegrin.RapCulture&reviewId=gp%3AAOqpTOHCwA530xDn4yLrXFZS9Pz9HmzqbF3u5cK3Ca2AlIToFzIR7x9CAwS1L48xT6H3EaZQeHWPyJ2gBctYsL8">Google
+                                                Play Store</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/.single-testi-->
+                        </div>
+                        <div>
+                            <div class="single-testi">
+                                <p>Masterclass ! <br /><br />Un seul mot à dire : masterclass, bien joué au dev, je
+                                    viens de finir le jeu à l’instant et franchement je suis impatient pour la
+                                    suite.<br /><br />Bonne continuation !<br /><br /><br /></p>
+                                <div class="media">
+                                    <img src="img/client4.png" alt="" />
+                                    <div class="media-body">
+                                        <h4>Hrkrios</h4>
+                                        <h5><a
+                                                href="https://apps.apple.com/fr/app/quiz-rap/id1514110754#see-all/reviews">App
+                                                Store</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/.single-testi-->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--/.container-->
+    </section>
+    <!--/.testimonials-->
+
+    <!--faq ask-->
+    <section class="faq-sec" id="faq">
+        <!--line shape background animation-->
+        <div class="container-line">
+            <div class="container-line-center">
+                <div class="line-item one"></div>
+                <div class="line-item two"></div>
+                <div class="line-item three"></div>
+                <div class="line-item four"></div>
+            </div>
+        </div>
+        <!--line shape background animation-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="title text-center">
+                        <h3>Foire aux questions</h3>
+                        <p>Tu trouveras toutes les réponses à tes questions sur Quiz Rap ici. Toutefois, si ce n'est pas
+                            le cas, n'hésites pas à nous contacter.</p>
+                    </div>
+                    <!--/.title-->
+                </div>
+                <div class="w-100"></div>
+                <div class="col-md-6">
+                    <div class="app-mock-up-img">
+                        <div class="row justify-content-md-center justify-content-sm-center">
+                            <div class="col-md-auto col-sm-auto">
+                                <div class="banner-app-mock">
+                                    <!--mobile inside image-->
+                                    <img src="img/IMG_3044.png" class="main-img" alt="" />
+                                    <!--mobile mockup-->
+                                    <img src="img/mobile-mock.png" class="mockup" alt="" />
+
+                                </div>
+                                <!--/.banner-app-mock-->
+                            </div>
+                        </div>
+                        <div class="mobile-graphic">
+                            <!--mobile graphic-->
+                            <img src="img/mobile-graphic.png" alt="" class="moc-grp">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="accordion">
+
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btnc" data-toggle="collapse" data-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne"> 1.L'appli est-elle gratuite
+                                        ?<i class="fa" aria-hidden="true"></i>
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    L'accès au jeu est entièrement gratuit. En revanche, pour bénéficier d'avantages
+                                    exclusifs, il y a une boutique au sein de l'application.
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.card-->
+
+                        <div class="card">
+                            <div class="card-header" id="headingtwo">
+                                <h5 class="mb-0">
+                                    <button class="btnc collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseTwo">2.Puis-je proposer de
+                                        nouvelles questions ?<i class="fa" aria-hidden="true"></i>
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingtwo"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    Bien sûr, rien de plus simple, il suffit de cliquer sur ce <a
+                                        href="https://admin.quizrap.fr/community">lien</a> et de remplir ce formulaire.
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.card-->
+
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btnc collapsed" data-toggle="collapse" data-target="#collapseThree"
+                                        aria-expanded="false" aria-controls="collapseThree">3.Comment soutenir le projet
+                                        ? <i class="fa" aria-hidden="true"></i>
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    Pour nous soutenir, tu peux mettre 5 étoiles dans le store avec un commentaire cool.
+                                    Tu peux aussi nous suivre sur les réseaux (cf ci-dessous).
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.card-->
+
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h5 class="mb-0">
+                                    <button class="btnc collapsed" data-toggle="collapse" data-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseFour">4.Où suivre Quiz Rap ? <i
+                                            class="fa" aria-hidden="true"></i>
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    Tu peux nous suivre sur les réseaux pour jouer à des jeux sur le rap (Instagram,
+                                    Twitter, Youtube) et on a aussi un Discord pour les vrais qui veulent échanger avec
+                                    nous.
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.card-->
+
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <h5 class="mb-0">
+                                    <button class="btnc collapsed" data-toggle="collapse" data-target="#collapseFive"
+                                        aria-expanded="false" aria-controls="collapseFive">5.Sur quoi portent les
+                                        questions ? <i class="fa" aria-hidden="true"></i>
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    Les questions sont réparties en 12 thèmes.<br /><br />Voici la liste des thèmes
+                                    détaillée :<br /><br />
+                                    <ul>
+                                        <li>Crève l’écran : cinéma, Youtube, séries, TV, le rap français à l'écran est
+                                            mis à l'honneur dans ce thème.</li><br />
+                                        <li>Boss de Paname : Comme PNL au sommet de la Tour Eiffel, montre nous que le
+                                            rap parisien n'a pas de secret.</li><br />
+                                        <li>La relève : Les étoiles montantes du rap game sont dans Quiz Rap.</li><br />
+                                        <li>Roi du clash : T’as saigné les Raps Contenders et tu connais par coeur le
+                                            palmarès de B2O, c’est que tu peux prétendre au titre de roi du clash.</li>
+                                        <br />
+                                        <li>À l’ancienne : pour ne pas oublier les bons vieux classiques, un quizz sur
+                                            le rap pour toutes les générations.</li><br />
+                                        <li>Bad Boys de Marseille : Jul, Naps, SCH tu reconnais bien là le style des
+                                            Bads Boys de Marseille.</li><br />
+                                        <li>Sous la cagoule : Les vrais prénoms qui se cachent derrière les pseudonymes
+                                            des rappeurs.</li><br />
+                                        <li>Rapunchline : La crème de la crème des punchlines francophones à retrouver
+                                            dans Quiz Rap</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.card-->
+
+                    </div>
+                    <!--/#accordion-->
+                </div>
+            </div>
+        </div>
+        <!--/.container-->
+    </section>
+    <!--/.faq ask-->
+
+    <!--recent blog-->
+    <section class="recent-blog-sec" id="blog">
+        <!--line shape background animation-->
+        <div class="container-line">
+            <div class="container-line-center">
+                <div class="line-item one"></div>
+                <div class="line-item two"></div>
+                <div class="line-item three"></div>
+                <div class="line-item four"></div>
+            </div>
+        </div>
+        <!--line shape background animation-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="title text-center">
+                        <h3>Ils valident Quiz Rap</h3>
+                        <p>Plusieurs articles qui parlent de l'application. N'hésite pas à les lire pour en apprendre
+                            davantage sur nous.</p>
+                    </div>
+                    <!--/.title-->
+                </div>
+                <div class="w-100"></div>
+                <div class="col-md-4">
+                    <div class="single-blog">
+                        <div class="card">
+                            <img src="img/blog1.png" alt="" />
+                            <div class="card-body">
+                                <h4><a
+                                        href="https://www.rtbf.be/tarmac/article/detail_quiz-rap-une-application-pour-tester-ta-culture-sur-le-rap-francophone?id=10866699">Quiz
+                                        Rap : Une application pour tester ta culture sur le rap francophone</a></h4>
+                                <p>Cette crise sanitaire que nous avons dû tous subir il y a plusieurs mois que ce soit
+                                    en France ou en ...</p>
+                                <a href="https://www.rtbf.be/tarmac/article/detail_quiz-rap-une-application-pour-tester-ta-culture-sur-le-rap-francophone?id=10866699"
+                                    class="btn">Lire plus<i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.single-blog-->
+                </div>
+                <div class="col-md-4">
+                    <div class="single-blog">
+                        <div class="card">
+                            <img src="img/blog2.png" alt="" />
+                            <div class="card-body">
+                                <h4><a
+                                        href="https://www.artichaut-productions.com/articles/actualites-rap/la-version-multi-joueurs-de-lapplication-quiz-rap-arrive-en-decembre/">La
+                                        version multi-joueurs de l'application Quiz Rap arrive en décembre</a></h4>
+                                <p>À l'occasion de la sortie de la version multi-joueurs de l'application Quiz Rap
+                                    prévue pour décembre ...</p>
+                                <a href="https://www.artichaut-productions.com/articles/actualites-rap/la-version-multi-joueurs-de-lapplication-quiz-rap-arrive-en-decembre/"
+                                    class="btn">Lire plus<i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.single-blog-->
+                </div>
+                <div class="col-md-4">
+                    <div class="single-blog">
+                        <div class="card">
+                            <img src="img/blog3.png" alt="" />
+                            <div class="card-body">
+                                <h4><a
+                                        href="https://www.intergeneraptions.fr/index.php/2021/12/20/quiz-rap-apllication/">Quiz
+                                        Rap: L’appli pour tester votre culture rap<br /><br /></a></h4>
+                                <p>Chez Ignr, notre objectif premier est de propager la culture rap. Pour cela, nous
+                                    avons à cœur de ...</p>
+                                <a href="https://www.intergeneraptions.fr/index.php/2021/12/20/quiz-rap-apllication/"
+                                    class="btn">Lire plus<i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.single-blog-->
+                </div>
+            </div>
+        </div>
+        <!--/.container-->
+    </section>
+    <!--/.recent blog-->
+
+    <!--contact us-->
+    <section class="contactus-sec" id="contact">
+        <!--line shape background animation-->
+        <div class="container-line">
+            <div class="container-line-center">
+                <div class="line-item one"></div>
+                <div class="line-item two"></div>
+                <div class="line-item three"></div>
+                <div class="line-item four"></div>
+            </div>
+        </div>
+        <!--line shape background animation-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="title text-center">
+                        <h3>Nous contacter</h3>
+                        <p>Une suggestion ? N'hésite pas à entrer en contact avec nous !</p>
+                    </div>
+                    <!--/.title-->
+                </div>
+                <!--<div id="map"></div>-->
+                <div class="w-100"></div>
+                <div class="col-md-8 offset-md-2">
+                    <div class="inside-contact">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="contact-form">
+                                    <form id="contact-form" method="POST" action="https://formspree.io/f/mgedveaz"
+                                        role="form">
+                                        <div class="messages"></div>
+                                        <div class="form-group">
+                                            <input id="form_name" type="text" name="name" placeholder="Nom - Prénom"
+                                                required="required" data-error="Ton nom est requis.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input id="form_email" type="email" name="email"
+                                                placeholder="Merci d'entrer votre e-mail *" required="required"
+                                                data-error="Un e-mail valide est requis">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                        <div class="form-group">
+
+                                            <textarea id="form_message" name="message" placeholder="Ecris ton message"
+                                                rows="4" cols="10" required="required"
+                                                data-error="Merci de nous laisser un message."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+
+                                        <button type="submit" class="btn">Envoyer</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="contact-details">
+                                    <div class="single-details">
+                                        <img src="img/icon/contact3.png" alt="" />
+                                        <p>contact@quizrap.fr</p>
+                                    </div>
+                                    <!--/.single-details-->
+                                </div>
+                                <!--/.contact-details-->
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.inside-contact-->
+                </div>
+                <div class="w-100"></div>
+                <div class="col-md-12">
+                    <ul class="social-extra">
+                        <li><a href="https://www.facebook.com/quizrap_-101309394997949/" class="btn"><i
+                                    class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://twitter.com/Quizrap_" class="btn"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/quizrap_" class="btn"><i
+                                    class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--/.container-->
+    </section>
+    <!--/.contact us-->
+
+    <!--copyright-->
+    <footer class="copyright-text">
         <ul>
-          <li>Un classement pour te comparer avec tes potes et les meilleurs joueurs de Quiz Rap</li>
-          <li>12 badges à collectionner sur Quiz Rap pour te comparer à tes potes</li>
-          <li>Plus de 100 rappeurs</li>
-          <li>Des questions variées: culture rap, cinéma, clash, grandes villes, certifications, jeunes rappeurs, ...</li>
-          <li>Garanti 100% rap français sur Quiz Rap (pour le moment)</li>
+            <li style="display: inline; padding: 0 4%"><a href="#" style="color: white;">© 2020 - 2021 Quiz Rap</a></li>
+            <li style="display: inline; padding: 0 4%"><a href="cgu.html" style=" color: white;">CGU</a></li>
+            <li style="display: inline; padding: 0 4%"><a href="privacy_policy.html" style=" color: white;">Politique de
+                    confidentialité</a></li>
+            <li style="display: inline; padding: 0 4%"><a href="mentions_legales.html" style=" color: white;">Mentions
+                    légales</a></li>
         </ul>
-        <h4>"Quiz Rap c'est l'histoire de deux potes passionnés de rap. Ne trouvant pas d'application à la hauteur pour tester leurs connaissances, ils l'ont créée."</h4>
-
-        <h5><a href="https://apps.apple.com/fr/app/quiz-rap/id1514110754"
-            target="itunes_store">
-            <img alt="Télécharge Quiz Rap sur l'AppStore ! Le meilleur jeu de quizz de rap" src="img/logo-appstore.png" /></a>
-        </h5>
-        <h5><a href="https://play.google.com/store/apps/details?id=com.pierrepellegrin.RapCulture"
-          target="itunes_store">
-          <img alt="Télécharge Quiz Rap sur Google Play ! Le meilleur jeu de quizz de rap" src="img/logo-googleplay.png" /></a>
-      </h5>
-      </div>
-      <div class="video-responsive">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/BkTG9d7QJ4U" frameborder="0" alt="Vidéo présentation Quiz Rap ! Le meilleur jeu de quizz sur le rap français" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      
-    </div>
-
-  </div>
-
-  <div allign=center>
-    <ul>
-
-      <span class='st_instagram_hcount' displayText='Instagram'></span>
-  </div>
-
-  
-
-  <div class=footer>
-
-    <footer>
-      <ul class=link-slideup>
-        <li style="opacity:1"><a href="/" style="color: inherit;">© 2020 - 2021 <b>Quiz Rap</b></a></li>
-        <li><a href="https://instagram.com/quizrap_" target="_blank"><i class="fa fa-instagram fa-lg"></i></a></li>
-        <li><a href="https://twitter.com/quizrap_" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
-        <li><a href="cgu.html" target="_blank">CGU</a>
-        <li><a href="privacy_policy.html" target="_blank">Politique de Confidentialité</a>
-        <li><a href="mentions_legales.html" target="_blank">Mentions Légales</a>
-      </ul>
     </footer>
-  </div>
-  </section>
+    <!--/.copyright-->
 
-  </div>
+    <!--<div data-aos="fade-up" data-aos-anchor=".other-element"></div>-->
 
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="jquery.smartbanner.js"></script>
-  <script type="text/javascript">
-    $(function() { $.smartbanner({
-      title: "Quiz Rap"
-    }) } )
-  </script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z9Z1PJ6WP8"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!--jquery-->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <!--bootstrap v4 js-->
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <!--popper js-->
+    <script src="js/vendor/popper.min.js"></script>
+    <!--aos js-->
+    <script src="js/vendor/aos.js"></script>
+    <!--owl carousel -->
+    <script src="js/vendor/owl-carousel.js"></script>
+    <!--counter js-->
+    <script src="js/vendor/counter.js"></script>
+    <!--easing js-->
+    <script src="js/vendor/easing.js"></script>
+    <!--ajax contact-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"
+        integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+    <!--main script-->
+    <script src="js/main.js"></script>
+    <script src="js/jquery.smartbanner.js"></script>
 
-    gtag('config', 'G-Z9Z1PJ6WP8');
-  </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z9Z1PJ6WP8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+
+        // Default ad_storage to 'denied'.
+        gtag('consent', 'default', {
+            'ad_storage': 'denied'
+        });
+
+        gtag('js', new Date());
+        gtag('config', 'G-Z9Z1PJ6WP8');
+    </script>
+
+    <!-- Update this section based on your business requirements. -->
+    <script>
+        function consentGranted() {
+            gtag('consent', 'update', {
+                'ad_storage': 'granted'
+            });
+        }
+    </script>
 
 </body>
 
