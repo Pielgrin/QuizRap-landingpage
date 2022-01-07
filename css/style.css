@@ -1233,6 +1233,7 @@ Start FAQ section style
 .banner-app-mock{
   position: relative;
   width: 272px;
+  margin: auto;
 }
 .banner-app-mock .mockup{
   width: 272px;
@@ -1600,9 +1601,34 @@ Start Responsive style
   .hero-content .btn-group .btn{
     clear: both;
     float: left;
+    margin-inline: 15%;
+    display: block;
+    /*padding: 6px 18px;*/
   }
   .hero-content .btn-group .btn:nth-child(2){
-    margin-left: 0;
+    margin-left: 15%;
+    width: 70%;
+  }
+  .hero-content .btn-group .btn:nth-child(1){
+    margin-left: 15%;
+    width: 70%;
+  }
+  .feature-inside .btn-group .btn:nth-child(1){
+    margin-bottom: 20px;  }
+}
+
+@media only screen and (min-device-width : 400px) and (max-device-width : 480px) {
+  .hero-content .btn-group{
+    display: inline;
+
+  }
+  .hero-content .btn-group .btn{
+    clear: both;
+    float: center;
+    padding: 6px 18px;
+  }
+  .hero-content .btn-group .btn:nth-child(2){
+    margin-left: 20px;
   }
   .feature-inside .btn-group .btn:nth-child(1){
     margin-bottom: 20px;
