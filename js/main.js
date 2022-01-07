@@ -26,9 +26,9 @@ $(function($) {
 
   /*=========================== preloader ===========================*/
   // Wait for window load
-  $(window).on('load', function() {
+  /*$(window).on('load', function() {
      $(".se-pre-con").fadeOut("slow");;
-  });
+  });*/
 
   /*=========================== preloader ===========================*/
 

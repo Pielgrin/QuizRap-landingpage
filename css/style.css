@@ -195,7 +195,7 @@ strong {
 /* This only works with JavaScript, 
         if it's not present, don't show loader */
 
-.no-js #loader {
+/*.no-js #loader {
     display: none;
 }
 
@@ -214,7 +214,7 @@ strong {
     height: 100%;
     z-index: 9999999;
     background: url(../img/loader_ico.gif) center no-repeat #fff;
-}
+}*/
 
 
 /* -------------------------------- 
